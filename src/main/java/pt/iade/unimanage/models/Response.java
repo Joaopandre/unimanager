@@ -1,7 +1,6 @@
 package pt.iade.unimanage.models;
 
 public class Response {
-    
         private String message;
         private Object object;
         public Response(String message, Object object) {
