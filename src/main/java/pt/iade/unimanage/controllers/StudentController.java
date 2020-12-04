@@ -1,5 +1,7 @@
 package pt.iade.unimanage.controllers;
 
+import java.util.List;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.MediaType;
@@ -50,7 +52,8 @@ public class StudentController{
     @PostMapping(path="",
     produces=MediaType.APPLICATION_JSON_VALUE)
     public Student addStudent(@RequestBody Student student){
-            students.add(student);
+            List<Student> students;
+			students.add(student);
             return student;
     }
     @GetMapping(path="{email}",

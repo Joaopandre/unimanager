@@ -38,5 +38,9 @@ public class StudentRepository {
      students.add(student);
      return student;
  }
+
+public static Student getStudent(String email) {
+	return null;
+}
  
 }
