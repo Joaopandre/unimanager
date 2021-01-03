@@ -2,7 +2,10 @@ package pt.iade.unimanage.models;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
+
+import pt.iade.unimanage.models.exceptions.Person;
 
 public class StudentRepository {
  private static ArrayList<Student> students =
@@ -40,6 +43,10 @@ public class StudentRepository {
  }
 
 public static Student getStudent(String email) {
+	return null;
+}
+
+public static Collection<? extends Person> getStudents(String reference) {
 	return null;
 }
  
